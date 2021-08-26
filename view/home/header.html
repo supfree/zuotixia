@@ -1,0 +1,201 @@
+<script>if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href=window.location.href.replace('www','m');}</script>
+<div class="bg-white">
+    <div style="margin:0 auto;width:1200px;">
+        <a href="/">
+            <img src="/logo.png" class="h-80 my-10 float-left">
+        </a>
+        <div class="float-right w-500 mt-30">
+            <form class="form-group" action="http://zhannei.baidu.com/cse/search" method="get" target="_blank" autocomplete="off" id="bdcs-search-form">
+                <div class="input-group">
+                    <input type="hidden" name="s" value="13837794739313885598">
+                    <input type="text" class="form-control input-lg" name="q" id="bdcs-search-form-input" placeholder="请输入要搜索的题目">
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-primary input-lg">搜索</button>
+                    </span>
+                </div>
+            </form>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<div class="bg-blue-600">
+    <div style="margin:0 auto;width:1200px;">
+        <div class="btn-group btn-group-lg">
+            <a class="btn btn-primary py-10" href="/">首页</a>
+            <%if(1==2){%>
+            <%for(let i=0;i<classes.length;i++){%>
+            <div class="btn-group btn-group-lg">
+                <button type="button" class="btn btn-primary dropdown-toggle py-10" data-toggle="dropdown" aria-expanded="true">
+                    <%=classes[i].name%>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <%let subclasses=classes[i].subclasses;%>
+                    <%for(let j=0;j<subclasses.length;j++){%>
+                    <li role="presentation"><a href="/subclass/<%=subclasses[j].id%>.html" role="menuitem"><%=subclasses[j].name%></a></li>
+                    <%}%>
+                </ul>
+            </div>
+            <%}%><%}%>
+            <div class="btn-group btn-group-lg">
+                <button type="button" class="btn btn-primary dropdown-toggle py-10" data-toggle="dropdown" aria-expanded="true">
+                    小学初中高中
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="presentation"><a href="/subclass/rx2.html" role="menuitem">小学</a></li>
+                    <li role="presentation"><a href="/subclass/dej.html" role="menuitem">初中</a></li>
+                    <li role="presentation"><a href="/subclass/v89.html" role="menuitem">高中</a></li>
+                </ul>
+            </div>
+            <div class="btn-group btn-group-lg">
+                <button type="button" class="btn btn-primary dropdown-toggle py-10" data-toggle="dropdown" aria-expanded="true">
+                    财务会计
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="presentation"><a href="/subclass/KM.html" role="menuitem">初级会计职称</a></li>
+                    <li role="presentation"><a href="/subclass/4Z.html" role="menuitem">注册会计师</a></li>
+                    <li role="presentation"><a href="/subclass/GE.html" role="menuitem">(初级)经济师</a></li>
+                    <li role="presentation"><a href="/subclass/lZ.html" role="menuitem">(中级)经济师</a></li>
+                    <li role="presentation"><a href="/subclass/yv.html" role="menuitem">税务师</a></li>
+                    <li role="presentation"><a href="/subclass/KNM.html" role="menuitem">统计师</a></li>
+                    <li role="presentation"><a href="/subclass/x0Y.html" role="menuitem">审计师</a></li>
+                    <li role="presentation"><a href="/subclass/j5V.html" role="menuitem">理财规划师</a></li>
+                    <li role="presentation"><a href="/subclass/bd.html" role="menuitem">中级会计职称</a></li>
+                    <li role="presentation"><a href="/subclass/59n.html" role="menuitem">会计从业(超押卷)</a></li>
+                    <li role="presentation"><a href="/subclass/wN.html" role="menuitem">会计从业资格考试(已停考)</a></li>
+                    <li role="presentation"><a href="/subclass/mZM.html" role="menuitem">初级管理会计师</a></li>
+                    <li role="presentation"><a href="/subclass/zzW.html" role="menuitem">高级会计</a></li>
+                    <li role="presentation"><a href="/subclass/695.html" role="menuitem">资产评估师</a></li>
+                    <li role="presentation"><a href="/subclass/09D.html" role="menuitem">(高级)经济师</a></li>
+                </ul>
+            </div><div class="btn-group btn-group-lg">
+                <button type="button" class="btn btn-primary dropdown-toggle py-10" data-toggle="dropdown" aria-expanded="true">
+                    医药卫生
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="presentation"><a href="/subclass/L6.html" role="menuitem">医师类</a></li>
+                    <li role="presentation"><a href="/subclass/Qz.html" role="menuitem">执业药师</a></li>
+                    <li role="presentation"><a href="/subclass/73p.html" role="menuitem">护理类</a></li>
+                    <li role="presentation"><a href="/subclass/Jxr.html" role="menuitem">检验类</a></li>
+                    <li role="presentation"><a href="/subclass/ZmA.html" role="menuitem">药学类</a></li>
+                    <li role="presentation"><a href="/subclass/1Q6.html" role="menuitem">中药学类</a></li>
+                    <li role="presentation"><a href="/subclass/Va8.html" role="menuitem">卫生招聘考试</a></li>
+                    <li role="presentation"><a href="/subclass/Wzg.html" role="menuitem">主治类</a></li>
+                    <li role="presentation"><a href="/subclass/KBR.html" role="menuitem">执业药师(三天提分卷)</a></li>
+                    <li role="presentation"><a href="/subclass/L1j.html" role="menuitem">健康管理师</a></li>
+                </ul>
+            </div><div class="btn-group btn-group-lg">
+                <button type="button" class="btn btn-primary dropdown-toggle py-10" data-toggle="dropdown" aria-expanded="true">
+                    职称英语
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="presentation"><a href="/subclass/jV.html" role="menuitem">理工类</a></li>
+                    <li role="presentation"><a href="/subclass/MBD.html" role="menuitem">卫生类</a></li>
+                    <li role="presentation"><a href="/subclass/9jb.html" role="menuitem">综合类</a></li>
+                </ul>
+            </div><div class="btn-group btn-group-lg">
+                <button type="button" class="btn btn-primary dropdown-toggle py-10" data-toggle="dropdown" aria-expanded="true">
+                    从业资格
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="presentation"><a href="/subclass/MD.html" role="menuitem">心理咨询师</a></li>
+                    <li role="presentation"><a href="/subclass/BY.html" role="menuitem">期货从业资格</a></li>
+                    <li role="presentation"><a href="/subclass/86.html" role="menuitem">教师资格</a></li>
+                    <li role="presentation"><a href="/subclass/AQ.html" role="menuitem">(初级)银行从业资格</a></li>
+                    <li role="presentation"><a href="/subclass/3e.html" role="menuitem">银行招聘考试</a></li>
+                    <li role="presentation"><a href="/subclass/Jr.html" role="menuitem">证劵从业( 旧 )</a></li>
+                    <li role="presentation"><a href="/subclass/ZA.html" role="menuitem">企业人力资源管理师</a></li>
+                    <li role="presentation"><a href="/subclass/16.html" role="menuitem">社会工作者</a></li>
+                    <li role="presentation"><a href="/subclass/8x6.html" role="menuitem">报检员</a></li>
+                    <li role="presentation"><a href="/subclass/vYW.html" role="menuitem">证劵从业( 新 )</a></li>
+                    <li role="presentation"><a href="/subclass/wMN.html" role="menuitem">证券投资顾问</a></li>
+                    <li role="presentation"><a href="/subclass/KBM.html" role="menuitem">证券分析师</a></li>
+                    <li role="presentation"><a href="/subclass/vYn.html" role="menuitem">教师招聘</a></li>
+                    <li role="presentation"><a href="/subclass/665.html" role="menuitem">营养师</a></li>
+                    <li role="presentation"><a href="/subclass/wM7.html" role="menuitem">(中级)银行从业</a></li>
+                    <li role="presentation"><a href="/subclass/bO1.html" role="menuitem">导游资格证</a></li>
+                    <li role="presentation"><a href="/subclass/nNA.html" role="menuitem">软件水平考试</a></li>
+                    <li role="presentation"><a href="/subclass/eEo.html" role="menuitem">高校辅导员溪溪老师</a></li>
+                    <li role="presentation"><a href="/subclass/OQJ.html" role="menuitem">演出经纪人</a></li>
+                    <li role="presentation"><a href="/subclass/9b.html" role="menuitem">法律职业资格(原司法考试)</a></li>
+                    <li role="presentation"><a href="/subclass/BMY.html" role="menuitem">报关员</a></li>
+                    <li role="presentation"><a href="/subclass/dNN.html" role="menuitem">基金从业资格</a></li>
+                    <li role="presentation"><a href="/subclass/zwW.html" role="menuitem">投资银行业务-保荐代表人</a></li>
+                    <li role="presentation"><a href="/subclass/NQ7.html" role="menuitem">高校教师资格证</a></li>
+                </ul>
+            </div><div class="btn-group btn-group-lg">
+                <button type="button" class="btn btn-primary dropdown-toggle py-10" data-toggle="dropdown" aria-expanded="true">
+                    公务员
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="presentation"><a href="/subclass/Rw.html" role="menuitem">国家公务员</a></li>
+                    <li role="presentation"><a href="/subclass/GmE.html" role="menuitem">省公务-行测</a></li>
+                    <li role="presentation"><a href="/subclass/l8Z.html" role="menuitem">事业单位公开招聘</a></li>
+                    <li role="presentation"><a href="/subclass/yRv.html" role="menuitem">政法干警 公安</a></li>
+                    <li role="presentation"><a href="/subclass/rZV.html" role="menuitem">陕西省-社区专职工作人员招聘</a></li>
+                    <li role="presentation"><a href="/subclass/JeN.html" role="menuitem">三支一扶</a></li>
+                    <li role="presentation"><a href="/subclass/ZWB.html" role="menuitem">军队文职人员招聘</a></li>
+                    <li role="presentation"><a href="/subclass/18E.html" role="menuitem">国家电网招聘</a></li>
+                </ul>
+            </div><div class="btn-group btn-group-lg">
+                <button type="button" class="btn btn-primary dropdown-toggle py-10" data-toggle="dropdown" aria-expanded="true">
+                    学历类
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="presentation"><a href="/subclass/mK.html" role="menuitem">研究生入学</a></li>
+                    <li role="presentation"><a href="/subclass/rgV.html" role="menuitem">同等学力申硕</a></li>
+                    <li role="presentation"><a href="/subclass/d7B.html" role="menuitem">成考(专升本)</a></li>
+                    <li role="presentation"><a href="/subclass/vWn.html" role="menuitem">成考(高起点)</a></li>
+                    <li role="presentation"><a href="/subclass/VZ8.html" role="menuitem">自考（医学）</a></li>
+                </ul>
+            </div><div class="btn-group btn-group-lg">
+                <button type="button" class="btn btn-primary dropdown-toggle py-10" data-toggle="dropdown" aria-expanded="true">
+                    建筑工程
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="presentation"><a href="/subclass/0Y.html" role="menuitem">监理工程师</a></li>
+                    <li role="presentation"><a href="/subclass/a2.html" role="menuitem">中级安全工程师</a></li>
+                    <li role="presentation"><a href="/subclass/na.html" role="menuitem">环境影响评价工程师</a></li>
+                    <li role="presentation"><a href="/subclass/OL.html" role="menuitem">注册电气工程师</a></li>
+                    <li role="presentation"><a href="/subclass/YK.html" role="menuitem">咨询工程师</a></li>
+                    <li role="presentation"><a href="/subclass/5n.html" role="menuitem">招标师</a></li>
+                    <li role="presentation"><a href="/subclass/zvR.html" role="menuitem">物业管理师</a></li>
+                    <li role="presentation"><a href="/subclass/vNW.html" role="menuitem">注册消防工程师</a></li>
+                    <li role="presentation"><a href="/subclass/Vv3.html" role="menuitem">注册结构工程师</a></li>
+                    <li role="presentation"><a href="/subclass/6ZG.html" role="menuitem">质量工程师</a></li>
+                    <li role="presentation"><a href="/subclass/00Y.html" role="menuitem">注册城乡规划师</a></li>
+                    <li role="presentation"><a href="/subclass/wDN.html" role="menuitem">注册环保工程师</a></li>
+                    <li role="presentation"><a href="/subclass/p8n.html" role="menuitem">电力系统职业技能鉴定</a></li>
+                    <li role="presentation"><a href="/subclass/EYZ.html" role="menuitem">房地产经纪人</a></li>
+                    <li role="presentation"><a href="/subclass/Qxz.html" role="menuitem">注册测绘师</a></li>
+                    <li role="presentation"><a href="/subclass/2ZR.html" role="menuitem">投资项目管理师</a></li>
+                    <li role="presentation"><a href="/subclass/GoW.html" role="menuitem">房地产经纪协理</a></li>
+                    <li role="presentation"><a href="/subclass/g50.html" role="menuitem">二级造价工程师</a></li>
+                    <li role="presentation"><a href="/subclass/opK.html" role="menuitem">试验检测师（含助理）</a></li>
+                    <li role="presentation"><a href="/subclass/Y57.html" role="menuitem">BIM工程师</a></li>
+                    <li role="presentation"><a href="/subclass/7Ba.html" role="menuitem">土地登记代理人</a></li>
+                    <li role="presentation"><a href="/subclass/E3l.html" role="menuitem">土木工程师（水利水电）</a></li>
+                    <li role="presentation"><a href="/subclass/QVZ.html" role="menuitem">公用设备工程师</a></li>
+                    <li role="presentation"><a href="/subclass/23p.html" role="menuitem">设备监理师</a></li>
+                    <li role="presentation"><a href="/subclass/xGL.html" role="menuitem">安全员</a></li>
+                    <li role="presentation"><a href="/subclass/jL0.html" role="menuitem">施工员</a></li>
+                    <li role="presentation"><a href="/subclass/M5y.html" role="menuitem">质量员</a></li>
+                    <li role="presentation"><a href="/subclass/6G.html" role="menuitem">一级造价工程师</a></li>
+                    <li role="presentation"><a href="/subclass/r00.html" role="menuitem">岩土工程师</a></li>
+                    <li role="presentation"><a href="/subclass/V3.html" role="menuitem">二级建造师</a></li>
+                    <li role="presentation"><a href="/subclass/WV5.html" role="menuitem">房地产估价师</a></li>
+                    <li role="presentation"><a href="/subclass/9Bx.html" role="menuitem">资料员</a></li>
+                    <li role="presentation"><a href="/subclass/Bam.html" role="menuitem">劳务员</a></li>
+                    <li role="presentation"><a href="/subclass/8Bx.html" role="menuitem">材料员</a></li>
+                    <li role="presentation"><a href="/subclass/AmY.html" role="menuitem">标准员</a></li>
+                    <li role="presentation"><a href="/subclass/3KK.html" role="menuitem">机械员</a></li>
+                    <li role="presentation"><a href="/subclass/RxM.html" role="menuitem">一级注册建筑师</a></li>
+                    <li role="presentation"><a href="/subclass/DLm.html" role="menuitem">二级注册建筑师</a></li>
+                    <li role="presentation"><a href="/subclass/5V8.html" role="menuitem">消防设施操作员</a></li>
+                    <li role="presentation"><a href="/subclass/r0.html" role="menuitem">一级建造师</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>

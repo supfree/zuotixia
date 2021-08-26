@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%=subclass.name%> - 做题侠</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="<%=subclass.name%>,题库,免费题库,在线刷题,免费刷题,职业考试,资格考试,建筑工程考试,财会考试,免费试卷,公务员考试,知识库,考试通关,考试练习">
+    <meta name="description" content="做题侠拥有千万道的中小学初中高中，K12,公务员考试，建筑工程，IT认证，资格考试，会计从业，医药考试，外语考试，外贸考试，学历考试等各类题目，免费在线刷题的题库平台。">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <link href="https://cdn.jsdelivr.net/gh/supfree/zuotixia/style.css" rel="stylesheet">
+    <script data-ad-client="ca-pub-3118933189526443" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</head>
+
+<body class="p-0 m-0 bg-grey-200">
+
+    <%-include('m_header.html')%>
+                
+    <div class="bg-white mt-20">
+        <ol class="breadcrumb text-nowrap overflow-auto">
+            <li><a href="/">首页</a></li>
+            <li class="active"><%=subclass.name%></li>
+        </ol>
+    </div>
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- 做题侠-手机端上部 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3118933189526443"
+         data-ad-slot="3760983164"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <%if(courses.length>0){%>
+    <div class="panel panel-bordered">
+        <div class="panel-body">
+            <h2 class="b"><%=subclass.name%></h2>
+            <div class="row font-size-16">
+                <%for(let i=0;i<courses.length;i++){%>
+                <a class="col-xs-6" href="/course/<%=courses[i].id%>.html">
+                    <div class="vertical-align text-center well px-10 h-100">
+                        <div class="vertical-align-middle font-size-16 b">
+                            <%=courses[i].name%>
+                        </div>
+                    </div>
+                </a>
+                <%}%>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <%}%>
+    
+    <%if(list.length>0){%>
+    <div class="panel panel-bordered">
+        <div class="panel-body">
+            <h2 class="b">最新题目</h2>
+            <div class="list-group list-group-dividered font-size-16">
+                <%for(let i=0;i<list.length;i++){%>
+                <a href="/item/<%=list[i].id%>.html" class="list-group-item px-0">
+                            <h4 class="b">问题</h4>
+                            <%=controller.dealItemTitle(list[i].otitle,1)%>
+                            <div class="text-right">
+                                <button class="btn btn-primary">题目详情</button>
+                            </div>
+                </a>
+                <%}%>
+            </div>
+        </div>
+    </div>
+    <%}%>
+
+    <div class="panel panel-bordered">
+        <div class="panel-body">
+            <h3 class="b"><%=oclass.name%></h3>
+            <div class="list-group list-group-bordered font-size-16">
+                <%for(let i=0;i<subclasses.length;i++){%>
+                <a href="/subclass/<%=subclasses[i].id%>.html" class="list-group-item text-nowrap <%if(subclass.id==subclasses[i].id){%>active b<%}%>"><%=subclasses[i].name%></a>
+                <%}%>
+            </div>
+        </div>
+    </div>
+ 
+    
+    <%-include('footer.html')%>
+    
+</body>
+</html>

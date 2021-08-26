@@ -1,0 +1,24 @@
+<footer class="bg-grey-300 h-100 mt-50">
+    <div class="pt-20 text-center">Copyright © 2020 做题侠 <a rel="nofollow" href="http://www.miibeian.gov.cn/">鲁ICP备16017120号-4</a> 鲁公网安备37020302371862号</div>
+    <div class="text-center">
+        <%if(controller.http.req.headers.host=='www.zuotixia.com'){%>
+        <a href="https://m.zuotixia.com<%=controller.http.url%>">手机版</a>
+        <%}else{%>
+        <a href="https://www.zuotixia.com<%=controller.http.url%>">电脑版</a>
+        <%}%>
+    </div>
+</footer>
+
+<div id="stastic" class="hide">
+    <script type="text/javascript" src="/static/js/common.js"></script>
+    <script type="text/javascript" src="https://v1.cnzz.com/z_stat.php?id=1279258565&web_id=1279258565"></script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?99598c3af0cc0407830b38eb6cca6eff";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</div>

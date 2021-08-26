@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>做题侠</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="题库,免费题库,在线刷题,免费刷题,职业考试,资格考试,建筑工程考试,财会考试,免费试卷,公务员考试,知识库,考试通关,考试练习">
+    <meta name="description" content="做题侠拥有千万道的中小学初中高中，K12,公务员考试，建筑工程，IT认证，资格考试，会计从业，医药考试，外语考试，外贸考试，学历考试等各类题目，免费在线刷题的题库平台。">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <link href="https://cdn.jsdelivr.net/gh/supfree/zuotixia/style.css" rel="stylesheet">
+    <script data-ad-client="ca-pub-3118933189526443" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</head>
+
+<body class="p-0 m-0 bg-grey-200">
+    
+    <%-include('m_header.html')%>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- 做题侠-手机端上部 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3118933189526443"
+         data-ad-slot="3760983164"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+    <div class="panel panel-bordered">
+        <div class="panel-body">
+            <%for(let i=0;i<classes.length;i++){%>
+                <h3 class="b"><%=classes[i].name%></h3>
+                <div class="row  font-size-16">
+                <%let subclasses=classes[i].subclasses;%>
+                <%for(let j=0;j<subclasses.length;j++){%>
+                <div class="col-xs-6 h-30 no-wrap" style="overflow:hidden;">
+                    <a href="/subclass/<%=subclasses[j].id%>.html"><%=subclasses[j].name%></a>
+                </div>
+                <%}%>
+                </div>
+                <hr>
+            <%}%>
+        </div>
+    </div>
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- 做题侠-手机端下部 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3118933189526443"
+         data-ad-slot="7332901829"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+    <footer class="bg-grey-300 h-100 mt-50">
+        <div class="pt-20 text-center">Copyright © 2020 做题侠 鲁ICP备16017120号-4 鲁公网安备37020302371862号</div>
+        <div class="text-center">
+            <a href="https://www.zuotixia.com<%=controller.http.url%>">电脑版</a>
+            <a href="https://m.supfree.net/">在线查询网</a>
+            <a href="https://m.jisuan.mobi/">计算专家</a>
+            <a href="https://www.shinatian.com/">是哪天</a>
+            <a href="https://cal.supfree.net/">计算器</a>
+        </div>
+    </footer>
+    
+    <div id="stastic" class="hide">
+        <script type="text/javascript" src="https://v1.cnzz.com/z_stat.php?id=1279258565&web_id=1279258565"></script>
+        <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?99598c3af0cc0407830b38eb6cca6eff";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,4 @@
+Sitemap: https://www.zuotixia.com/sitemap.xml
+Sitemap: https://m.zuotixia.com/m_sitemap.xml
+Crawl-delay: 0
+Request-rate: 2/1

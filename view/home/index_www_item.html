@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%=controller.dealItemTitle(item.otitle).substr(0,50)%> - 做题侠</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="<%=test.title%>,<%=course.name%>,<%=subclass.name%>题库,免费题库,在线刷题,免费刷题,职业考试,资格考试,建筑工程考试,财会考试,免费试卷,公务员考试,知识库,考试通关,考试练习">
+    <meta name="description" content="<%=controller.dealItemTitle(item.otitle)%>">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <link href="https://cdn.jsdelivr.net/gh/supfree/zuotixia/style.css" rel="stylesheet">
+    <script data-ad-client="ca-pub-3118933189526443" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</head>
+
+<body class="p-0 m-0 bg-grey-200">
+
+    <%-include('header.html')%>
+    
+    <div class="bg-white mt-20" style="margin:0 auto;width:1200px;">
+        <ol class="breadcrumb">
+            <li>
+                <a href="/">首页</a>
+            </li>
+            <li><a href="/subclass/<%=subclass.id%>.html"><%=subclass.name%></a></li>
+            <li><a href="/course/<%=course.id%>.html"><%=course.name%></a></li>
+            <li><a href="/test/<%=test.id%>.html"><%=test.title%></a></li>
+            <li class="active">题目</li>
+        </ol>
+    </div>        
+                
+    <div class="bg-white mt-20" style="margin:0 auto;width:1200px;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- 做题侠-PC-大横幅 -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-3118933189526443"
+             data-ad-slot="3326261131"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    
+    <div class="mt-20" style="margin:0 auto;width:1200px;">
+        <div class="float-left" style="width:880px;">
+            <div class="panel panel-bordered">
+                <div class="panel-body font-size-20">
+                    <h3 class="b">问题</h3>
+                    <%-controller.textFormat(item.otitle)%>
+                </div>
+            </div>
+            <%if(!think.isEmpty(item.oquestion)){%>
+            <div class="panel panel-bordered">
+                <div class="panel-body font-size-18"><%-controller.textFormat(item.oquestion)%></pre></div>
+            </div>
+            <%}%>
+            <div class="panel panel-bordered" id="show">
+                <div class="panel-body"><button type="button" class="btn btn-primary btn-lg" onclick="showAnswer();">查看答案</button></div>
+            </div>
+            <%if(!think.isEmpty(item.oanswer)){%>
+            <div class="panel panel-bordered hide" id="answer">
+                <div class="panel-body font-size-18 answer"></div>
+            </div>
+            <%}%>
+            <div class="panel panel-bordered hide" id="analysis">
+                <div class="panel-body font-size-16">
+                    <h3 class="b">题目解析</h3>
+                    <%-controller.textFormat(item.memo)%>
+                </div>
+            </div>
+            
+            <div class="mb-20">
+                <%if(prev.id!=0){%>
+                <div class="float-left"><a href="/item/<%=prev.id%>.html" class="btn btn-primary">上一道</a></div>
+                <%}%>
+                <%if(next.id!=0){%>
+                <div class="float-right"><a href="/item/<%=next.id%>.html" class="btn btn-primary">下一道</a></div>
+                <%}%>
+                <div class="clearfix"></div>
+            </div>
+            
+            <%if(relate.length>0){%>
+            <div class="panel panel-bordered">
+                <div class="panel-body">
+                    <div class="list-group list-group-dividered font-size-16">
+                        <%for(let i=0;i<relate.length;i++){%>
+                        <a href="/item/<%=relate[i].id%>.html" class="list-group-item text-nowrap" style="overflow-x:hidden;"><%=controller.dealItemTitle(relate[i].otitle,1)%></a>
+                        <%}%>
+                    </div>
+                </div>
+            </div>
+            <%}%>
+        </div>
+        <div class="w-300 float-right">
+            <%if(tests.length>0){%>
+            <div class="panel panel-bordered">
+                <div class="panel-body">
+                    <h3 class="b"><%=course.name%></h3>
+                    <div class="list-group" style="overflow-y:auto;height:370px;">
+                        <%for(let i=0;i<tests.length;i++){%>
+                        <a href="/test/<%=tests[i].id%>.html" class="list-group-item text-nowrap <%if(item.test_id==tests[i].id){%>active b<%}%>" style="overflow-x:hidden;"><%=tests[i].title%></a>
+                        <%}%>
+                    </div>
+                </div>
+            </div>
+            <%}%>
+            
+            <div class="panel panel-bordered">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- 做题侠-PC-右侧大框 -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-3118933189526443"
+                     data-ad-slot="9533588599"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <%-include('footer.html')%>
+
+<script>
+//获得答案
+var showAnswer=function(){
+    $.ajax({
+      cache:false,
+      type:'POST',
+      xhrFields:{withCredentials:true},
+      crossDomain:true,
+      url:'/index/answer',
+      data:{id:'<%=item.id%>'}
+    }).done(function(data){
+      if(data.errno=='0'){
+        $('.answer').html(data.data);
+        $('#show').hide();
+        $('#answer,#analysis').removeClass('hide');
+      }else{
+        showError(data.errmsg);
+      }
+    });
+}
+</script>
+</body>
+</html>
